@@ -7,7 +7,7 @@ const kW = 1;    #Loads kW write
 const kvar = 5;  #Loads kvar write
 const Count = 4; #Loads Count
 
-filename = joinpath(Pkg.dir(), "OpenDSSDirect", "examples", "8500-Node", "Master.dss")
+filename = joinpath(dirname(@__FILE__), "8500-Node", "Master.dss")
 
 DSSCore.DSSPut_Command("clear")
 DSSCore.DSSPut_Command("compile $filename")

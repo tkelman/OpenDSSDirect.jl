@@ -2,7 +2,7 @@
 
 using OpenDSSDirect.DSS
 
-basepath = joinpath(Pkg.dir(), "OpenDSSDirect", "examples", "ckt5")
+basepath = joinpath(dirname(@__FILE__), "ckt5")
 include(joinpath(basepath, "../loadshape.jl"))
 filename = joinpath(basepath, "Master_ckt5.dss")
 

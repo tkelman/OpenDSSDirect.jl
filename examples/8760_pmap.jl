@@ -8,7 +8,7 @@ using OpenDSSDirect.DSS
     N = nprocs() - 1
     using OpenDSSDirect.DSS
     numhours = 8760 ÷ N
-    filename = joinpath(Pkg.dir(), "OpenDSSDirect", "examples", "ckt5", "Master_ckt5.dss")
+    filename = joinpath(dirname(@__FILE__), "ckt5", "Master_ckt5.dss")
     dss("""
         clear
         compile $filename
